@@ -16,6 +16,8 @@ SECTIONS
       *(.syscall .syscall.*)
    } > codemem
 
+   PROVIDE (__code_start = .);
+
    .text ALIGN(32) : {
       KEEP (*(.crt0))
       KEEP (*(SORT_NONE(.init)))
@@ -31,6 +33,8 @@ SECTIONS
 
       KEEP (*(SORT_NONE(.fini)))
    } > codemem
+
+   PROVIDE (__code_end = .);
 
    . = ORIGIN(datamem);
    .rodata : {

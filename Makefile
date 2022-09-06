@@ -21,7 +21,6 @@ SOURCES		:=	cafe \
 				libraries/wutcrt \
 				libraries/wutnewlib \
 				libraries/wutstdc++ \
-				libraries/wutmalloc \
 				libraries/wutdevoptab \
 				libraries/wutsocket \
 				libraries/wutdefaultheap \
@@ -29,6 +28,9 @@ SOURCES		:=	cafe \
 				libraries/libgfd/src \
 				libraries/nn_erreula \
 				libraries/nn_swkbd
+
+#				libraries/wutmalloc \
+
 DATA		:=	data
 INCLUDES	:=	include \
 				libraries/libwhb/include \
